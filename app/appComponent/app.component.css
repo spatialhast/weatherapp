@@ -1,0 +1,11 @@
+header {
+  background: url("../app/images/pattern.svg") repeat-x;
+  text-align: center;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+header h1 {
+  font-size: 3em;
+  color: #fff;
+}
