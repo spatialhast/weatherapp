@@ -15,7 +15,7 @@ export class WeatherForCityComponent implements OnInit, OnDestroy {
     sub: any;
     cityName: string;
     forecast: any;
-
+    show: boolean=false;
 
     constructor (
         private weatherService: WeatherService,

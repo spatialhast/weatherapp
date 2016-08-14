@@ -13,10 +13,9 @@ var router_1 = require('@angular/router');
 var EnterCityComponent = (function () {
     function EnterCityComponent(router) {
         this.router = router;
-        this.cityName = 'London';
     }
     EnterCityComponent.prototype.handler = function (cityName) {
-        this.router.navigate(['/forecast', cityName]);
+        this.router.navigate(['/forecast', cityName ? cityName : 'Kharkov']);
     };
     EnterCityComponent = __decorate([
         core_1.Component({

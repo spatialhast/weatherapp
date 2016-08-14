@@ -16,6 +16,7 @@ var WeatherForCityComponent = (function () {
     function WeatherForCityComponent(weatherService, route) {
         this.weatherService = weatherService;
         this.route = route;
+        this.show = false;
     }
     WeatherForCityComponent.prototype.ngOnInit = function () {
         var _this = this;
