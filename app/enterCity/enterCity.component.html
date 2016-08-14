@@ -1,0 +1,6 @@
+<div class="city-form">
+    <label for="cityNameField">Enter City Name</label>
+    <input type="text" id="cityNameField" required 
+    [(ngModel)]='cityName' #cityNameField />
+    <button type="button" (click)=handler(cityNameField.value)>Show weather</button>
+</div>

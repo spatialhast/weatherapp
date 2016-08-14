@@ -1,0 +1,15 @@
+.wrapper {
+  text-align: center;
+}
+
+.forecast img {
+  width: 250px;
+  height: 250px;
+}
+
+.details {
+  cursor: pointer;
+  color: #498BFC;
+  border-bottom: dashed #498BFC;
+  font-size: 1em;
+}

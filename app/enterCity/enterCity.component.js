@@ -10,20 +10,22 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
-var AppComponent = (function () {
-    function AppComponent() {
-        this.title = 'Check the weather';
+var EnterCityComponent = (function () {
+    function EnterCityComponent(router) {
+        this.router = router;
+        this.cityName = 'London';
     }
-    AppComponent = __decorate([
+    EnterCityComponent.prototype.handler = function (cityName) {
+        this.router.navigate(['/forecast', cityName]);
+    };
+    EnterCityComponent = __decorate([
         core_1.Component({
-            selector: 'my-app',
-            templateUrl: 'app/appComponent/app.component.html',
-            styleUrls: ['app/appComponent/app.component.css'],
-            directives: [router_1.ROUTER_DIRECTIVES]
+            templateUrl: 'app/enterCity/enterCity.component.html',
+            styleUrls: ['app/enterCity/enterCity.component.css']
         }), 
-        __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+        __metadata('design:paramtypes', [router_1.Router])
+    ], EnterCityComponent);
+    return EnterCityComponent;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.EnterCityComponent = EnterCityComponent;
+//# sourceMappingURL=enterCity.component.js.map
